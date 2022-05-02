@@ -2,6 +2,10 @@
 color: #777;
 }
 
+.text-primary {
+color: #C2996A;
+}
+
 .img-centered {
 margin: 0 auto;
 }
@@ -11,15 +15,34 @@ background-color: #f7f7f7;
 }
 
 .btn-xl {
-padding: 15px 30px;
-margin-top: 2rem;
-margin-bottom: 6rem;
+padding: 20px 40px;
 border-color: #C2996A;
 text-transform: uppercase;
 font-size: 15px;
 font-weight: 700;
 color: #C2996A;
 background-color: #ffffff;
+}
+
+header .intro-text {
+padding-top: 100px;
+padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+margin-bottom: 25px;
+font-size: 22px;
+font-style: italic;
+line-height: 22px;
+}
+
+header .intro-text .intro-heading {
+margin-bottom: 25px;
+text-transform: uppercase;
+font-size: 50px;
+font-weight: 700;
+line-height: 50px;
+}
 
 @media(min-width:768px) {
 header .intro-text {
@@ -33,7 +56,6 @@ header .intro-text .intro-lead-in {
     font-style: italic;
     line-height: 40px;
 }
-}
 
 header .intro-text .intro-heading {
     margin-bottom: 50px;
@@ -45,7 +67,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-padding: 100px;
+padding: 100px 0;
 }
 
 section h2.section-heading {
@@ -64,7 +86,7 @@ font-weight: 400;
 
 @media(min-width:768px) {
 section {
-padding: 40px 0;
+    padding: 40px 0;
 }
 }
 
@@ -73,7 +95,34 @@ right: 0;
 margin: 0 0 15px;
 }
 
-@media(min-width:760px) {
+#portfolio .portfolio-item .portfolio-link {
+display: block;
+position: relative;
+margin: 0 auto;
+max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+margin: 0 auto;
+padding: 25px;
+max-width: 400px;
+text-align: center;
+background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+margin: 0;
+text-transform: none;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+margin: 0;
+font-size: 16px;
+font-style: italic;
+}
+
+
+@media(min-width:767px) {
 #portfolio .portfolio-item {
     margin: 0 0 30px;
 }
@@ -92,8 +141,13 @@ section #contact .form-group {
 margin-bottom: 50px;
 }
 
-.item_image2 {
-width: 27rem;
+section #contact .form-group textarea.form-control {
+height: 236px;
+}
+
+.item_image {
+width: 30rem;
 height: 30rem;
+background-size: cover;
 background-position: center center;
 }

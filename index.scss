@@ -10,8 +10,114 @@ html {
     font-size: 62.5%; 
 }
 
+body footer {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: burlywood;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+    font-size: 6rem;
+    color: #fff;
+    font-family: "Yeseva One", cursive;
+}
+
+h2 {
+    margin: 0;
+    font-size: 4.8rem;
+    color: #fff;
+}
+
+h3 {
+    margin: 0;
+    font-size: 3rem;
+    color: #38666b;
+}
+
+h4 {
+    font-size: 1.8rem;
+    font-family: "Goudy Old Style", sans-serif;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #737373;
+    font-family: "Goudy Old Style", sans-serif;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: #f7f7f7;
+}
+
+i {
+    color: #fff;
+}
+
+.bi {
+    font-size: 2rem;
+}
+
+.bi-chevron-down {
+    position:absolute;
+    bottom:2%;
+    right:50%;
+    animation: arrowmove 1s ease-in-out infinite;
+}
+
+@keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+    100%{bottom:1%;}
+}
+
+.scroll_back {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+
+.wine {
+    background-image: url('../wev_presentation/images/Wine_Club.jpg');
+}
+
+.shop {
+    background-image: url('../wev_presentation/images/Shop+Spice+Salt.jpeg');
+}
+
+.team {
+    background-image: url(../wev_presentation/images/Team.jpeg);
+}
+
 .header {
-    background-image: url('./images/DSCF8698.jpg');
+    background-image: url('../wev_presentation/images/DSCF8698.jpg');
     position: relative;
     min-height: 100%;
     background-size: cover;
@@ -71,123 +177,4 @@ html {
             font-size: 6rem;
         }
     }
-}
-
-body {
-    margin: 0;
-    background-color: #38666b;
-}
-
-body footer {
-    width: 100%;
-}
-
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-}
-
-a {
-    text-decoration: none;
-}
-
-h1 {
-    margin: 0;
-    font-size: 6rem;
-    color: #fff;
-    font-family: "Yeseva One", cursive;
-}
-
-h2 {
-    margin: 0;
-    font-size: 4.8rem;
-    color: #fff;
-}
-
-h3 {
-    margin: 0;
-    font-size: 3rem;
-    color: #38666b;
-}
-
-h4 {
-    font-size: 1.8rem;
-    font-family: "Goudy Old Style", sans-serif;
-    font-weight: 400;
-}
-
-h5 {
-    margin: 1.8rem;
-    font-size: 6rem;
-    color: #38666b;
-}
-
-h6 {
-    margin: 1rem;
-    font-family: "Goudy Old Style", sans-serif;
-    font-size: small;
-}
-
-p {
-    margin: 0;
-    font-size: 2.2rem;
-    color: #737373;
-    font-family: "Goudy Old Style", sans-serif;
-}
-
-.img-centered {
-    margin: 0 auto;
-}
-
-.bg-light-gray {
-    background-color: #f7f7f7;
-}
-
-i {
-    color: #fff;
-}
-
-.bi {
-    font-size: 2rem;
-}
-
-.bi-chevron-down {
-    position:absolute;
-    bottom:2%;
-    right:50%;
-    animation: arrowmove 1s ease-in-out infinite;
-}
-
-@keyframes arrowmove{
-    0%{bottom:1%;}
-    50%{bottom:3%;}
-    100%{bottom:1%;}
-}
-
-.scroll_back {
-    position: relative;
-    min-height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    z-index: 2;
-}
-
-.wine {
-    background-image: url('./images/Wine_Club.jpg');
-}
-
-.shop {
-    background-image: url('./images/Shop+Spice+Salt.jpeg');
-}
-
-.team {
-    background-image: url('./images/Team.jpeg');
 }
