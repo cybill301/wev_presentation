@@ -16,85 +16,43 @@
 .shop__contents {
   padding: 15rem 8rem;
 }
-
-.shop__contents__head h1 {
-  font-size: 2rem;
-
 .shop__contents__head h3 {
   color: #737373;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 0 17px 17px 17px;
 }
-
 .shop__contents__items {
   padding: 0 20rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
 }
-
 .shop__contents__items__salt {
   margin: 0 auto;
 }
-
 .shop__contents__items__salt h4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0%;
 }
-
 .shop__contents__items__giftcard {
   margin: 0 auto;
 }
-
 .shop__contents__items__giftcard h4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 0%;
 }
 
-
-.recruit__top {
-  height: 1000px;
-  background-color: #C2996A;
-}
-  
 .recruit__top h1 {
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .recruit__members {
   padding: 15rem 8rem 6.3rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-}
   gap: 17px;
   row-gap: 67px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -115,16 +73,12 @@
 .recruit__members_smomelier {
   grid-column: 5/span 2;
 }
-
 .recruit__bottom {
   padding: 0px 8rem 15rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
   gap: 2rem;
 }
-
 .recruit__bottom div img {
   width: 100%;
   height: auto;
@@ -141,64 +95,45 @@
 footer {
   background-color: #37666B;
 }
-
 footer .footer__top {
   margin-top: 5rem;
   text-align: center;
 }
-
 footer .footer__nav {
   padding: 0 8rem;
 }
-
 footer .footer__nav ul {
   padding: 16px 39rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 footer .footer__nav ul li {
   margin-right: 1.8rem;
 }
-
 footer .footer__nav ul li a {
   color: #fff;
   font-size: 2rem;
 }
-
 footer .footer__bottom {
   padding: 0rem 8rem;
   margin-bottom: 10rem;
 }
-
 footer .footer__bottom ul {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
 }
-
 footer .footer__bottom ul li {
   padding: 17px;
 }
-
 footer .footer__bottom ul li a {
   display: block;
   margin-bottom: 2rem;
   color: #fff;
   font-size: 2rem;
 }
-
 footer .footer__bottom ul li a p {
   opacity: 0.8;
   color: #fff;
-  font-size: 1rem;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-
   font-weight: 200;
   font-size: 1.4rem;
   padding: 0.8rem 0 0 0;
@@ -256,12 +191,14 @@ header .intro-text .intro-heading {
     padding-top: 400px;
     padding-bottom: 20rem;
   }
+
   header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
   }
+
   header .intro-text .intro-heading {
     margin-bottom: 50px;
     text-transform: uppercase;
@@ -270,7 +207,6 @@ header .intro-text .intro-heading {
     line-height: 75px;
   }
 }
-
 section {
   padding: 100px 0;
 }
@@ -294,7 +230,6 @@ section h3.section-subheading {
     padding: 40px 0;
   }
 }
-
 #portfolio .portfolio-item {
   right: 0;
   margin: 0 0 15px;
@@ -331,7 +266,6 @@ section h3.section-subheading {
     margin: 0 0 30px;
   }
 }
-
 section #contact {
   background-position: center;
   background-repeat: no-repeat;
@@ -357,9 +291,6 @@ section #contact .form-group textarea.form-control {
 }
 
 * {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  border: .1px solid transparent;
   box-sizing: content-box;
   border: 0.1px solid black;
 }
@@ -389,7 +320,6 @@ li {
 
 a {
   text-decoration: none;
-  color: #ffffff;
 }
 
 h1 {
@@ -411,21 +341,15 @@ h3 {
   color: #38666b;
 }
 
-h5 {
-  margin: 5rem;
-  font-size: 6rem;
-  color: #38666b;
 h4 {
   font-size: 1.8rem;
   font-family: "Goudy Old Style", sans-serif;
   font-weight: 400;
-
 }
 
 p {
   margin: 0;
   font-size: 2.2rem;
-  line-height: 1.8;
   color: #737373;
   font-family: "Goudy Old Style", sans-serif;
 }
@@ -433,16 +357,6 @@ p {
 i {
   color: #fff;
 }
-
-
-.img-centered {
-  margin: 0 auto;
-}
-
-.bg-light-gray {
-  background-color: #f7f7f7;
-}
-
 
 .bi {
   font-size: 2rem;
@@ -517,40 +431,26 @@ i {
   z-index: 2;
   padding: 5.5rem 8.3rem;
 }
-
 .header__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .header__top__icon img {
   width: 4.5rem;
 }
-
 .header__top__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .header__top__menu ul {
   display: flex;
   justify-content: center;
 }
-
 .header__top__menu ul li {
   display: flex;
   justify-content: center;
   margin-right: 2rem;
 }
-
 .header__top__menu ul li a {
   color: #fff;
   font-size: 1.6rem;
@@ -564,18 +464,14 @@ i {
   font-size: 2rem;
   margin: 0 1rem;
 }
-
 .header__headline {
   margin-top: 30rem;
   text-align: center;
 }
-
 .header__gotoBottom {
   text-align: center;
   margin-top: 25rem;
 }
-
 .header__gotoBottom i {
   font-size: 6rem;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
