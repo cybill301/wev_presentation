@@ -16,8 +16,7 @@
 .shop__contents {
   padding: 15rem 8rem;
 }
-.shop__contents__head h1 {
-  font-size: 2rem;
+.shop__contents__head h3 {
   color: #737373;
   display: flex;
   justify-content: center;
@@ -46,10 +45,6 @@
   margin: 0%;
 }
 
-.recruit__top {
-  height: 1000px;
-  background-color: #C2996A;
-}
 .recruit__top h1 {
   color: #fff;
   display: flex;
@@ -58,8 +53,25 @@
 .recruit__members {
   padding: 15rem 8rem 6.3rem;
   display: grid;
-  grid-template-columns: auto auto auto;
+  gap: 17px;
+  row-gap: 67px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto;
+}
+.recruit__members_owner {
+  grid-column: 1/span 3;
+}
+.recruit__members_chef {
+  grid-column: 4/span 3;
+}
+.recruit__members_general_director {
+  grid-column: 1/span 2;
+}
+.recruit__members_bar_director {
+  grid-column: 3/span 2;
+}
+.recruit__members_smomelier {
+  grid-column: 5/span 2;
 }
 .recruit__bottom {
   padding: 0px 8rem 15rem;
@@ -72,24 +84,19 @@
   height: auto;
 }
 
-.member_name {
-  color: #37666B;
-  font-size: 1.8rem;
-}
-
-.member_position {
-  font-family: fantasy;
-}
-
 .member_description {
   color: #737373;
-  font-size: 1.2rem;
+}
+
+.member {
+  padding: 0 17px;
 }
 
 footer {
   background-color: #37666B;
 }
 footer .footer__top {
+  margin-top: 5rem;
   text-align: center;
 }
 footer .footer__nav {
@@ -105,10 +112,11 @@ footer .footer__nav ul li {
 }
 footer .footer__nav ul li a {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 footer .footer__bottom {
   padding: 0rem 8rem;
+  margin-bottom: 10rem;
 }
 footer .footer__bottom ul {
   display: grid;
@@ -121,18 +129,20 @@ footer .footer__bottom ul li a {
   display: block;
   margin-bottom: 2rem;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 footer .footer__bottom ul li a p {
+  opacity: 0.8;
   color: #fff;
-  font-size: 1rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 200;
+  font-size: 1.4rem;
+  padding: 0.8rem 0 0 0;
+  text-decoration: underline;
 }
 
 * {
   box-sizing: content-box;
-  border: 0.1px solid transparent;
+  border: 0.1px solid black;
 }
 
 html {
@@ -181,6 +191,12 @@ h3 {
   color: #38666b;
 }
 
+h4 {
+  font-size: 1.8rem;
+  font-family: "Goudy Old Style", sans-serif;
+  font-weight: 400;
+}
+
 p {
   margin: 0;
   font-size: 2.2rem;
@@ -192,6 +208,41 @@ i {
   color: #fff;
 }
 
+.bi {
+  font-size: 2rem;
+}
+
+.bi-chevron-down {
+  position: absolute;
+  bottom: 2%;
+  right: 50%;
+  -webkit-animation: arrowmove 1s ease-in-out infinite;
+          animation: arrowmove 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+
+@keyframes arrowmove {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 3%;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
 .scroll_back {
   position: relative;
   min-height: 100%;
@@ -241,13 +292,27 @@ i {
 .header__top__menu {
   display: flex;
 }
+.header__top__menu ul {
+  display: flex;
+  justify-content: center;
+}
 .header__top__menu ul li {
+  display: flex;
+  justify-content: center;
   margin-right: 2rem;
 }
 .header__top__menu ul li a {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 700;
+  vertical-align: middle;
+}
+.header__top__menu .nav-bar-icons {
+  display: flex;
+}
+.header__top__menu .nav-bar-icons a i {
+  font-size: 2rem;
+  margin: 0 1rem;
 }
 .header__headline {
   margin-top: 30rem;
@@ -255,7 +320,7 @@ i {
 }
 .header__gotoBottom {
   text-align: center;
-  margin-top: 20rem;
+  margin-top: 25rem;
 }
 .header__gotoBottom i {
   font-size: 6rem;

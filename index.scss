@@ -3,7 +3,7 @@
 
 * {
     box-sizing: content-box;
-    border: .1px solid transparent;
+    border: .1px solid black;
 }
 
 html {
@@ -52,6 +52,12 @@ h3 {
     color: #38666b;
 }
 
+h4 {
+    font-size: 1.8rem;
+    font-family: "Goudy Old Style", sans-serif;
+    font-weight: 400;
+}
+
 p {
     margin: 0;
     font-size: 2.2rem;
@@ -61,6 +67,23 @@ p {
 
 i {
     color: #fff;
+}
+
+.bi {
+    font-size: 2rem;
+}
+
+.bi-chevron-down {
+    position:absolute;
+    bottom:2%;
+    right:50%;
+    animation: arrowmove 1s ease-in-out infinite;
+}
+
+@keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+    100%{bottom:1%;}
 }
 
 .scroll_back {
@@ -113,13 +136,27 @@ i {
         &__menu {
             display: flex;
             ul {
+                display: flex;
+                justify-content: center;
                 li {
+                    display: flex;
+                    justify-content: center;
                     margin-right: 2rem;
                     a {
                         color: #fff;
                         font-size: 1.6rem;
                         font-weight:700;
+                        vertical-align: middle;
                     }
+                }
+            }
+            .nav-bar-icons {
+                display: flex;
+                a {
+                    i {
+                        font-size: 2rem;
+                        margin: 0 1rem;
+                    } 
                 }
             }
         }
@@ -132,7 +169,7 @@ i {
 
     &__gotoBottom {
         text-align: center;
-        margin-top: 20rem;
+        margin-top: 25rem;
         i {
             font-size: 6rem;
         }
